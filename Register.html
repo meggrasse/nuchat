@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Document</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
-​  <link href="main.css" rel="stylesheet">
+​  <link href="nuchatline3.css" rel="stylesheet">
 	<title> NUChatline </title>
 ​
 ​
@@ -22,16 +22,10 @@
 ​
 <body>
  
-  <header id="welcome" >
+ <header id="welcome" >
    
-   <div id="nuchat">
-      NUChatline
-​
-    </div>
-      <div id="menu">
-​
-        <div>
-​
+      <img src="NUChat.png" style="width:200px;height:80px;">
+  
   </header>
 ​
 <div id="background">
@@ -39,21 +33,37 @@
 </div>
 ​
 <form>
-  User Name:<br>
+  <label>
+  <span> Username:</span>
   <input type="text" name="User Name"><br>
-  Email:<br>
+</label>
+
+<label>
+  <span>Email:</span>
   <input type="text" name="Email"><br>
-  Password:<br>
-  <input type="text" name="Password"><br>
-  Retype Password:<br>
-  <input type="text" name="Retype Password"><br>
+</label>
 
-  Organization: <br>
-  <input type="radio" name="organization" value="NU Listens"> NU Listens<br>
-  <input type="radio" name="organization" value="CAPS Counselor"> CAPS Counselor<br>
+<label>
+  <span>Password:</span>
+  <input type="text" name="Password" type="password"><br>
 
-  Confirmation Code:<br>
+</label>
+
+<label>
+  <span>Retype Password:</span>
+  <input type="text" name="Retype Password"><br><br>
+</label>
+
+<label>
+  <span> Organization: </span>
+  <input type="radio" name="organization" value="NU Listens">NU Listens<br>
+  <input type="radio" name="organization" value="CAPS Counselor">CAPS Counselor<br>
+</label>
+
+<label>
+  <span>Confirmation Code:</span>
   <input type="text" name="Confirmation Code"><br>
+</label>
 
   <button type="button">Submit</button>  
 </form>
