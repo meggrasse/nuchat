@@ -1,0 +1,16 @@
+{
+  "name": "nuchat",
+  "version": "1.0.0",
+  "description": "this is an application to allow students to anonymously chat with peer listeners or counslelors when they need someone to tlak to",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nuchat"
+  ],
+  "author": "meg grasse",
+  "license": "ISC"
+}
