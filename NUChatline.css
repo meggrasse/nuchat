@@ -4,20 +4,42 @@ html,body {height:100%;margin:0;padding:0;}
 
 
 body {
-    background: -webkit-linear-gradient(#C644FC, #5856D6); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#C644FC, #5856D6); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#C644FC, #5856D6); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#C644FC, #5856D6); /* Standard syntax */
+    
 }
+
 
 #welcome {
   height: 80px;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 2.0px solid #C8C8C8;
   background-color: #ffffff;
 }
 
 .overall {
   text-align: center;
+}
+
+#about {
+  font-family: 'Raleway', sans-serif;
+  font-size: medium;
+  margin-right: 40px;
+  margin-top: 30px;
+  float:right;
+}
+
+#contact{
+  font-family: 'Raleway', sans-serif;
+  font-size: medium;
+  margin-right: 42px;
+  margin-top: 30px;
+  float:right;
+}
+
+a{
+color:black;
+}
+
+a:hover{
+color:#B496C8;
 }
 
 #question {
@@ -29,28 +51,42 @@ font-family: 'Raleway', sans-serif;
 }
 
 #buttons button {
-  background: #ffffff;
+  background: #B496C8;
+  border: solid 1.8px #BDAEC6;
   width: 350px;
   height: 200px;
   border-radius: 9px;
   outline: none;
-  border: 0.2px solid #ffffff;
   padding: 15px 15px;
   text-align: center;
   line-height: 20px;
   font-family: 'Raleway', sans-serif;
   font-size: x-large;
+ 
 }
 
 #buttons button:hover{
-border: solid 2px #ffffff;
-background:transparent;
+  background: -webkit-linear-gradient(#B496C8, #916DAD); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(##B496C8, #916DAD); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#B496C8, #916DAD); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#B496C8, #916DAD); /* Standard syntax */
+}
 
+#welcome button:hover{
+  background: -webkit-linear-gradient(#B496C8, #916DAD); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#B496C8, #916DAD); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#B496C8, #916DAD); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#B496C8, #916DAD); /* Standard syntax */
 }
 
 #buttons button:active{
-box-shadow: inset 0 0 0 1px #8c8c8c, inset 0 5px 30px #193047;
+box-shadow: inset 0 0 0 1px #916DAD, inset 0 5px 30px #916DAD;
 }
+
+#welcome button:active{
+box-shadow: inset 0 0 0 1px #916DAD, inset 0 5px 30px #916DAD;
+}
+
 
 #Couns-Peer {
   margin: 100px;

@@ -6,9 +6,15 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+#welcome {
+  height: 80px;
+  border-bottom: 2.0px solid #C8C8C8;
+  background-color: #ffffff;
+}
+
 #home{
   background: transparent;
-  border: solid 1.8px #916DAD;
+  border: solid 1.8px ##B496C8;
   width: 90px;
   height: 40px;
   border-radius: 6px;
@@ -23,32 +29,33 @@ body {
   margin-top: 20px;
 }
 
-#welcome {
-  height: 80px;
-  border-bottom: 2.0px solid #C8C8C8;
-  background-color: #ffffff;
-}
-
 button {
   width: 100px;
   height: 50px;
   border-radius: 7px;
-  background:#916DAD;
+  background:#B496C8;
   outline: none;
   margin-top: 30px;
   margin-left: 30px;
   font-size: 16px;
-  border: solid 1px #916DAD;
+  border: solid 1px #B496C8;
 }
 
 button:hover{
-  background: -webkit-linear-gradient(#B496C8, #916DAD); /* For Safari 5.1 to 6.0 */
+ background: -webkit-linear-gradient(#B496C8, #916DAD); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(##B496C8, #916DAD); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(#B496C8, #916DAD); /* For Firefox 3.6 to 15 */
   background: linear-gradient(#B496C8, #916DAD); /* Standard syntax */
 }
 
 #welcome button:hover{
+  background: -webkit-linear-gradient(#B496C8, #916DAD); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(##B496C8, #916DAD); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#B496C8, #916DAD); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#B496C8, #916DAD); /* Standard syntax */
+}
+
+#register button:hover{
   background: -webkit-linear-gradient(#B496C8, #916DAD); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(##B496C8, #916DAD); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(#B496C8, #916DAD); /* For Firefox 3.6 to 15 */
@@ -63,6 +70,10 @@ button:active{
 box-shadow: inset 0 0 0 1px #916DAD, inset 0 5px 30px #916DAD;
 }
 
+a:hover{
+  color: #B496C8;
+}
+
 input {
 -webkit-border-radius: 10px;
 -moz-border-radius: 10px;
@@ -75,30 +86,12 @@ outline-color: #5856D6;
 input[type="text"] {    
     width: 600px;
     height: 30px;
-    outline: none;
     margin-left: 30px;
     margin-bottom: 10px;
     margin-top: 10px;
     font-size: 20px;
     line-height:15px;
 } 
-
-input[type="radio"] {   
-  width: 40px;
-    margin-left: 130px;
-    height: 30px;
-    margin-bottom: 10px;
-    margin-top: 0px;
-    line-height: 20px;
-}
-
-input[value="NU Listens"]{
-  margin-left: 30px;
-}
-
-input[value="CAPS Counselor"]{
-  margin-left: 180px;
-}
 
 form{
   margin-left:auto;
@@ -115,3 +108,27 @@ label>span {
     font-size: 20px;
 }
 
+#submit {
+  float: right;
+  margin-left: 500px;
+}
+
+#forgot{
+  font-size: small;
+}
+
+#first{
+background: transparent;
+width: 150px;
+margin-left: 360px;
+}
+
+#question{
+  color:gray;
+  text-align: center;
+}
+
+hr {
+  border-style: dashed;
+  margin-top: 70px;
+}
