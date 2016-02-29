@@ -14,7 +14,7 @@ body {
 
 #home{
   background: transparent;
-  border: solid 1.8px ##B496C8;
+  border: solid 1.8px #B496C8;
   width: 90px;
   height: 40px;
   border-radius: 6px;
@@ -110,17 +110,24 @@ label>span {
 
 #submit {
   float: right;
-  margin-left: 500px;
+  margin-right: 90px;
 }
 
 #forgot{
   font-size: small;
 }
 
+#forgotps {
+  float: left;
+  margin-left: 10px;
+
+}
+
 #first{
 background: transparent;
-width: 150px;
-margin-left: 360px;
+width: 170px;
+margin-left: 350px;
+text-align: center;
 }
 
 #question{
@@ -130,5 +137,5 @@ margin-left: 360px;
 
 hr {
   border-style: dashed;
-  margin-top: 70px;
+  margin-top: 110px;
 }
