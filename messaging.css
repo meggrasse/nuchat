@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500);
+
+html,body {height:100%;margin:0;padding:0;}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.message1 {
+	width: 100%;
+}
+
+.incoming {
+	width: 30%;
+	margin: 20px;
+  	background-color: #F1F0F0;
+  	padding: 10px;
+  	border-radius: 10px;
+  	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    float: left;
+}
+
+.outgoing {
+	width: 30%;
+  	background-color: #0084FF;
+  	padding: 10px;
+  	margin: 20px;
+  	margin-right: 20%;
+  	border-radius: 10px;
+  	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    float: right;
+}
+
+.outgoing p {
+	color: white;
+}
+
+.message-block {
+	width: 80%;
+	float: right;
+	border-left: solid black 1px;
+}
+
+.text {
+	width: 80%;
+	position: fixed;
+	bottom: 0px;
+	border-top: solid black 1px;
+}
+
+.text textarea {
+	border: none;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  border-radius: 7px;
+  background:#B496C8;
+  outline: none;
+  margin-top: 30px;
+  margin-left: 30px;
+  font-size: 16px;
+  border: solid 1px #B496C8;
+  float: right;
+}
+
+button:hover{
+ background: -webkit-linear-gradient(#B496C8, #916DAD); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(##B496C8, #916DAD); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#B496C8, #916DAD); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#B496C8, #916DAD); /* Standard syntax */
+}

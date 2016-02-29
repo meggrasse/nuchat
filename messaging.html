@@ -1,0 +1,49 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+​	<link href="messaging.css" rel="stylesheet">
+	<script src="messaging.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<title> Messaging </title>
+	<script>
+		$(document).ready(function(){
+			$("#message1block").hide();
+			$("#message2block").hide();
+			$("#message3block").hide();	
+			$("#message1block").fadeIn();		
+			$( "#submitbutton").click(function() {
+  				$("#message2block").fadeIn();
+  				$("#message3block").delay(1000).fadeIn(0);
+				$("#rawinput").reset();		
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class = "message-block">
+		<div class = "container" id="message1block">
+			<div class = "incoming">
+				<p id="message1">Hi, thanks for reaching out to NU Chat. How are you today?</p>
+			</div>
+		</div>
+		<div class = "container" id="message2block">
+			<div class = "outgoing">
+				<p id="message2"></p>
+			</div>
+		</div>
+		<div class = "container" id="message3block">
+			<div class = "incoming">
+				<p id="message2">Okay thanks for letting me know. This is just our prototype so we can't discuss any further.</p>
+			</div>
+		</div>
+		<div class = "text">
+			<input class="form-control" rows="3" id = "rawinput" name="typed_message" placeholder="Type message here"></input>
+			<div id="submit">
+        		<button type="button" id="submitbutton" onclick="send()">Submit</button>
+      		</div>
+		</div>
+	</div>
+</body>
+</html>
