@@ -1,9 +1,43 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500);
 
-html,body {height:100%;margin:0;padding:0;}
+html.body {height:100%;margin:0;padding:0;}
 
 body {
     font-family: 'Raleway', sans-serif;
+}
+
+#welcome {
+  height: 80px;
+  border-bottom: 2.0px solid #C8C8C8;
+  background-color: #ffffff;
+}
+
+#home{
+  background: transparent;
+  border: solid 1.8px #B496C8;
+  width: 90px;
+  height: 40px;
+  border-radius: 6px;
+  outline: none;
+  padding: 15px 15px;
+  text-align: center;
+  line-height: 4px;
+  font-family: 'Raleway', sans-serif;
+  font-size: medium;
+  float:right;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+#welcome button:hover{
+  background: -webkit-linear-gradient(#B496C8, #916DAD); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(##B496C8, #916DAD); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#B496C8, #916DAD); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#B496C8, #916DAD); /* Standard syntax */
+}
+
+#welcome button:active{
+box-shadow: inset 0 0 0 1px #916DAD, inset 0 5px 30px #916DAD;
 }
 
 .message1 {
@@ -26,7 +60,6 @@ body {
   	background-color: #0084FF;
   	padding: 10px;
   	margin: 20px;
-  	margin-right: 20%;
   	border-radius: 10px;
   	-webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -38,33 +71,44 @@ body {
 }
 
 .message-block {
-	width: 80%;
-	float: right;
-	border-left: solid black 1px;
+	width: 100%;
+	float: left;
+  padding-left: 20px;
+
+	
 }
 
 .text {
-	width: 80%;
+	width: 95%;
 	position: fixed;
-	bottom: 0px;
+  padding-left: 20px;
+	bottom: 10px;
 	border-top: solid black 1px;
+  float: left;
+  display : inline-block;
+  
 }
 
 .text textarea {
+  width: 100%;
 	border: none;
+  float: left;
+  display : inline-block;
 }
 
 button {
   width: 100px;
   height: 50px;
+  bottom: 0px;
   border-radius: 7px;
   background:#B496C8;
   outline: none;
-  margin-top: 30px;
+  margin-top: 5px;
   margin-left: 30px;
   font-size: 16px;
   border: solid 1px #B496C8;
   float: right;
+  display : inline-block;
 }
 
 button:hover{

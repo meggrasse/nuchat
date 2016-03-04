@@ -6,7 +6,7 @@
 ​	<link href="messaging.css" rel="stylesheet">
 	<script src="messaging.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<title> Messaging </title>
+	<title> NUChatline Messaging </title>
 	<script>
 		$(document).ready(function(){
 			$("#message1block").hide();
@@ -15,17 +15,22 @@
 			$("#message1block").fadeIn();		
 			$( "#submitbutton").click(function() {
   				$("#message2block").fadeIn();
-  				$("#message3block").delay(1000).fadeIn(0);
+  				$("#message3block").delay(1000).fadeIn();
 				$("#rawinput").reset();		
 			});
 		});
 	</script>
 </head>
+
 <body>
+ <header id="welcome" >
+    <img src="NUChat1.png" style="width:200px;height:80px;">
+    <button id="home"><a href="http://meggrasse.github.io/">Home</button>
+  </header>
 	<div class = "message-block">
 		<div class = "container" id="message1block">
 			<div class = "incoming">
-				<p id="message1">Hi, thanks for reaching out to NU Chat. How are you today?</p>
+				<p id="message1">Hi, thanks for reaching out to NU Chatline. I am a Peer Listener. How are you today?</p>
 			</div>
 		</div>
 		<div class = "container" id="message2block">
@@ -35,15 +40,17 @@
 		</div>
 		<div class = "container" id="message3block">
 			<div class = "incoming">
-				<p id="message2">Okay thanks for letting me know. This is just our prototype so we can't discuss any further.</p>
+				<p id="message2">Okay thank you for letting me know! This is just our prototype so we can't discuss anything further right now.</p>
 			</div>
 		</div>
-		<div class = "text">
-			<input class="form-control" rows="3" id = "rawinput" name="typed_message" placeholder="Type message here"></input>
+		<span class = "text">
+			<div>
+			<textarea class="form-control" rows="3" id = "rawinput" name="typed_message" placeholder="Type message here"></textarea>
+			</div>
 			<div id="submit">
-        		<button type="button" id="submitbutton" onclick="send()">Submit</button>
+        		<button type="button" id="submitbutton" onclick="send()">Send</button>
       		</div>
-		</div>
+		</span>
 	</div>
 </body>
 </html>
