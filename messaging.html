@@ -9,15 +9,160 @@
 	<title> NUChatline Messaging </title>
 	<script>
 		$(document).ready(function(){
+			var $count = 0;
 			$("#message1block").hide();
 			$("#message2block").hide();
-			$("#message3block").hide();	
+			$("#message3block").hide();
+			$("#message4block").hide();
+			$("#message5block").hide();
+			$("#message6block").hide();	
+			$("#message7block").hide();
+			$("#message8block").hide();
+			$("#message9block").hide();
+			$("#message10block").hide();
+			$("#message11block").hide();
+			$("#message12block").hide();
+			$("#message13block").hide();
+			$("#message14block").hide();
+			$("#message15block").hide();
+			$("#message16block").hide();	
+			$("#message17block").hide();
+			$("#message18block").hide();
+			$("#message19block").hide();
 			$("#message1block").fadeIn();		
 			$( "#submitbutton").click(function() {
-  				$("#message2block").fadeIn();
-  				$("#message3block").delay(1000).fadeIn();
-				$("#rawinput").reset();		
-			});
+				if ($count == 0) {
+					send2();
+  					$("#message2block").fadeIn();
+  					$("#message3block").delay(1000).fadeIn();
+  					$count = $count + 1;
+  					clear();
+				}
+				else if ($count == 1) {
+    				send4();
+  					$("#message4block").fadeIn();
+  					$("#message5block").delay(1000).fadeIn();
+					$count = $count + 1;
+					clear();
+				}
+				else if ($count == 2) {
+    				send6();
+  					$("#message6block").fadeIn();
+  					$("#message7block").delay(1000).fadeIn();
+					$count = $count + 1;
+					clear();
+				}
+				else if ($count == 3) {
+    				send8();
+  					$("#message8block").fadeIn();
+  					$("#message9block").delay(1000).fadeIn();
+					$count = $count + 1;
+					clear();
+				}
+				else if ($count == 4) {
+    				send10();
+  					$("#message10block").fadeIn();
+  					$("#message11block").delay(1000).fadeIn();
+					$count = $count + 1;
+					clear();
+				}
+				else if ($count == 5) {
+    				send12();
+  					$("#message12block").fadeIn();
+  					$("#message13block").delay(1000).fadeIn();
+					$count = $count + 1;
+					clear();
+				}
+				else if ($count == 6) {
+    				send14();
+  					$("#message14block").fadeIn();
+  					$("#message15block").delay(1000).fadeIn();
+					$count = $count + 1;
+					clear();
+				}
+				else if ($count == 7) {
+    				send16();
+  					$("#message16block").fadeIn();
+  					$("#message17block").delay(1000).fadeIn();
+					$count = $count + 1;
+					clear();
+				}
+				else {
+    				send18();
+  					$("#message18block").fadeIn();
+  					$("#message19block").delay(1000).fadeIn();
+					$count = $count + 1;
+					clear();				
+				}
+			});	
+			$(document).keypress(function(e) {
+    			if(e.which == 13 && $count == 0) {
+    				send2();
+  					$("#message2block").fadeIn();
+  					$("#message3block").delay(1000).fadeIn();
+  					$count = $count + 1;
+  					clear();
+				}
+				else if(e.which == 13 && $count == 1) {
+    				send4();
+  					$("#message4block").fadeIn();
+  					$("#message5block").delay(1000).fadeIn();
+					$count = $count + 1;
+					clear();
+				}
+				else if (e.which == 13 && $count == 2) {
+    				send6();
+  					$("#message6block").fadeIn();
+  					$("#message7block").delay(1000).fadeIn();
+					$count = $count + 1;
+					clear();
+				}
+				else if (e.which == 13 && $count == 3) {
+    				send8();
+  					$("#message8block").fadeIn();
+  					$("#message9block").delay(1000).fadeIn();
+					$count = $count + 1;
+					clear();
+				}
+				else if (e.which == 13 && $count == 4) {
+    				send10();
+  					$("#message10block").fadeIn();
+  					$("#message11block").delay(1000).fadeIn();
+					$count = $count + 1;
+					clear();
+				}
+				else if (e.which == 13 && $count == 5) {
+    				send12();
+  					$("#message12block").fadeIn();
+  					$("#message13block").delay(1000).fadeIn();
+					$count = $count + 1;
+					clear();
+				}
+				else if (e.which == 13 && $count == 6) {
+    				send14();
+  					$("#message14block").fadeIn();
+  					$("#message15block").delay(1000).fadeIn();
+					$count = $count + 1;
+					clear();
+				}
+				else if (e.which == 13 && $count == 7) {
+    				send16();
+  					$("#message16block").fadeIn();
+  					$("#message17block").delay(1000).fadeIn();
+					$count = $count + 1;
+					clear();
+				}
+				else if (e.which == 13 && $count == 8) {
+    				send18();
+  					$("#message18block").fadeIn();
+  					$("#message19block").delay(1000).fadeIn();
+					$count = $count + 1;
+					clear();
+				}
+				else {
+					//nothing
+				}
+    		});	
 		});
 	</script>
 </head>
@@ -25,32 +170,117 @@
 <body>
  <header id="welcome" >
     <img src="NUChat1.png" style="width:200px;height:80px;">
-    <button id="home"><a href="http://meggrasse.github.io/">Home</button>
+    <a href="index.html">
+    <button id="home"> Home </button>
+</a>
   </header>
 	<div class = "message-block">
-		<div class = "container" id="message1block">
-			<div class = "incoming">
-				<p id="message1">Hi, thanks for reaching out to NU Chatline. I am a Peer Listener. How are you today?</p>
+		<div class = "message-container">
+			<div class = "container" id="message1block">
+				<div class = "incoming">
+					<p id="message1">Hi, thanks for reaching out to NU Chatline. I am a Peer Listener. How are you today?</p>
+				</div>
+			</div>
+			<div class = "container" id="message2block">
+				<div class = "outgoing">
+					<p id="message2"></p>
+				</div>
+			</div>
+			<div class = "container" id="message3block">
+				<div class = "incoming">
+					<p id="message3">Okay thank you for letting me know! This is just our prototype so we can't discuss anything further right now.</p>
+				</div>
+			</div>
+			<div class = "container" id="message4block">
+				<div class = "outgoing">
+					<p id="message4"></p>
+				</div>
+			</div>
+			<div class = "container" id="message5block">
+				<div class = "incoming">
+					<p id="message5">message3</p>
+				</div>
+			</div>
+			<div class = "container" id="message6block">
+				<div class = "outgoing">
+					<p id="message6"></p>
+				</div>
+			</div>
+			<div class = "container" id="message7block">
+				<div class = "incoming">
+					<p id="message7">message4</p>
+				</div>
+			</div>
+			<div class = "container" id="message8block">
+				<div class = "outgoing">
+					<p id="message8"></p>
+				</div>
+			</div>
+			<div class = "container" id="message9block">
+				<div class = "incoming">
+					<p id="message9">message5</p>
+				</div>
+			</div>
+			<div class = "container" id="message10block">
+				<div class = "outgoing">
+					<p id="message10"></p>
+				</div>
+			</div>
+			<div class = "container" id="message11block">
+				<div class = "incoming">
+					<p id="message11">message6</p>
+				</div>
+			</div>
+			<div class = "container" id="message12block">
+				<div class = "outgoing">
+					<p id="message12"></p>
+				</div>
+			</div>
+			<div class = "container" id="message13block">
+				<div class = "incoming">
+					<p id="message13">message7</p>
+				</div>
+			</div>
+			<div class = "container" id="message14block">
+				<div class = "outgoing">
+					<p id="message14"></p>
+				</div>
+			</div>
+			<div class = "container" id="message15block">
+				<div class = "incoming">
+					<p id="message15">message8</p>
+				</div>
+			</div>
+			<div class = "container" id="message16block">
+				<div class = "outgoing">
+					<p id="message16"></p>
+				</div>
+			</div>
+			<div class = "container" id="message17block">
+				<div class = "incoming">
+					<p id="message17">message9</p>
+				</div>
+			</div>
+			<div class = "container" id="message18block">
+				<div class = "outgoing">
+					<p id="message18"></p>
+				</div>
+			</div>
+			<div class = "container" id="message19block">
+				<div class = "incoming">
+					<p id="message19">message10</p>
+				</div>
 			</div>
 		</div>
-		<div class = "container" id="message2block">
-			<div class = "outgoing">
-				<p id="message2"></p>
-			</div>
-		</div>
-		<div class = "container" id="message3block">
-			<div class = "incoming">
-				<p id="message2">Okay thank you for letting me know! This is just our prototype so we can't discuss anything further right now.</p>
-			</div>
-		</div>
-		<span class = "text">
+		<br>
+		<div class = "text">
 			<div>
-			<textarea class="form-control" rows="3" id = "rawinput" name="typed_message" placeholder="Type message here"></textarea>
+				<textarea class="form-control" rows="3" id = "rawinput" name="typed_message" placeholder="Type message here"></textarea>
 			</div>
 			<div id="submit">
-        		<button type="button" id="submitbutton" onclick="send()">Send</button>
+				<input type="hidden" class="count1" value="">
+        		<button type="button" id="submitbutton">Send</button>
       		</div>
-		</span>
+		</div>
 	</div>
 </body>
-</html>

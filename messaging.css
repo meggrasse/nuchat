@@ -40,10 +40,6 @@ body {
 box-shadow: inset 0 0 0 1px #916DAD, inset 0 5px 30px #916DAD;
 }
 
-.message1 {
-	width: 100%;
-}
-
 .incoming {
 	width: 30%;
 	margin: 20px;
@@ -73,20 +69,20 @@ box-shadow: inset 0 0 0 1px #916DAD, inset 0 5px 30px #916DAD;
 .message-block {
 	width: 100%;
 	float: left;
-  padding-left: 20px;
+}
 
-	
+.message-container {
+  margin-bottom: 300px;
 }
 
 .text {
 	width: 95%;
 	position: fixed;
-  padding-left: 20px;
 	bottom: 10px;
-	border-top: solid black 1px;
-  float: left;
+  border-top: 2.0px solid #C8C8C8;
   display : inline-block;
-  
+  margin-right: 25px;
+  margin-left: 25px;
 }
 
 .text textarea {
